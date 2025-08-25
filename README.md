@@ -1,7 +1,11 @@
 # <p align="center"> <b> 🫧 Kisunka! 🫧 </b> </p>
-<p align="center"></p>
-![the cutest creature evr](https://github.com/user-attachments/assets/0aff286d-0caf-429c-8d46-ca3b83245285)
-*I haven't made a preview yet, so here's a fox for u*
+### <p align="center"> Make your browser purrrr~ </p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0aff286d-0caf-429c-8d46-ca3b83245285" alt="the cutest creature evr" />
+</p>
+
+<p align="center"> <i> I haven't made a preview yet, so here's a fox for u </i> </p>
 
 ## Installation
 
