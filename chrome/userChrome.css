@@ -1,14 +1,11 @@
-/* .notificationbox-stack.global-notificationbox {
+.notificationbox-stack.global-notificationbox {
     background: #3b394d;
-} */
-
-/* #PlacesToolbarItems {
-    padding-bottom: 1px;
 }
 
-#PlacesToolbarItems .bookmark-item {
-    padding: 3px;
-} */
+/* bookmarks bar padding */
+#PlacesToolbarItems {
+    padding-bottom: 2px;
+}
 
 /* rounded urlbar */
 .urlbar-input-container, #urlbar-background {
@@ -24,27 +21,11 @@ div[breakout-extend=true] #urlbar-background {
     margin-inline-end: 8px;
 }
 
-/* #tabbrowser-tabs {
-    border-inline-start: unset !important;
-} */
+#urlbar-input {
+    padding-inline-start: 8px !important;
+}
 
-/* #PlacesToolbar .toolbarbutton-icon {
-    margin-inline-end: 9px !important;
-} */
-
-/* #navigator-toolbox {
-    background: #1E1E30 !important;
-} */
-
-/* #nav-bar {
-    background: #3B394D !important;
-    border-radius: 8px 8px 0 0;
-} */
-
-/* #PersonalToolbar {
-    background: #3B394D !important;
-} */
-
+/* rounded urlbar buttons */
 #identity-box {
     border-radius: 999vw 0 0 999vw;
     overflow: hidden;
@@ -75,17 +56,15 @@ div[breakout-extend=true] #urlbar-background {
     margin-right: 8px;
 }
 
+/* hide extension button from urlbar */
 #identity-box.extensionPage #identity-icon-box {
     display: none;
 }
 
-/* #tracking-protection-icon-container {
+/* hide tracking protection button from urlbar */
+#tracking-protection-icon-container {
     display: none;
-} */
-
-/* #alltabs-button {
-    display: none;
-} */
+}
 
 .tab-background {
     border-radius: 7px !important;
@@ -119,19 +98,7 @@ div[breakout-extend=true] #urlbar-background {
     border-radius: 0px 0px 0px 10px;
 }
 
-/* :root {
-    --inactive-titlebar-opacity: 1 !important;
-} */
-
-/* #tabbrowser-arrowscrollbox-periphery {
-    margin-left: 9px;
-    z-index: 1;
-}
-
-#tabbrowser-arrowscrollbox-periphery .toolbarbutton-icon {
-    border-radius: 7px !important;
-} */
-
+/* tab buttons color */
 toolbar #tabs-newtab-button:hover > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
     background: #f2aab9 !important;
 }
@@ -140,25 +107,7 @@ toolbar #tabs-newtab-button:hover > :is(.toolbarbutton-icon, .toolbarbutton-text
     background: #f2aab9 !important;
 }
 
-/* .tabbrowser-tab {
-    margin-left: 9px !important;
-    margin-right: -9px !important;
-    z-index: 1;
-}
-
-.tabbrowser-tab:is([visuallyselected], [multiselected]) {
-    overflow: visible !important;
-    z-index: 0;
-} */
-
-/* .titlebar-close:hover {
-    box-shadow: 0 10px 0 0 #e81123;
-}
-
-.titlebar-close:hover:active {
-    box-shadow: 0 10px 0 0 #F16F7A !important;
-} */
-
+/* stylish findbar animation✨ */
 findbar[hidden=true] {
     transform: translateY(-200%) !important;
 }
