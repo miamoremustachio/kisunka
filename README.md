@@ -22,9 +22,8 @@
 - Restart Firefox and enjoy your neko vibes 🍵
 
 ## Sources
- - [Firefox Chrome-like](https://github.com/OfficialFreak/firefox_chromelike) by @OfficialFreak
-
-<!-- Also included is my Tabliss (New Tab) Setup which you can get by installing the Tabliss Extension and pasting the CSS from `tabliss.css` inside of the Custom CSS Widget. The Wallpaper can be set manually and is included as well. -->
+- [Firefox Chrome-like](https://github.com/OfficialFreak/firefox_chromelike) by @OfficialFreak
+- [GWfox](https://github.com/akkva/gwfox) by @akkva
 
 ***
 *🛠️ Tested on Firefox 142.0 & Win11 24H2 and expected to work best with these versions.*
