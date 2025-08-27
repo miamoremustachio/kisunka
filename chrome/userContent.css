@@ -1,7 +1,7 @@
 /* limit the amount of shortcuts */
 @-moz-document url(about:newtab), url("about:home") { 
-    .top-sites-list { display: flex; justify-content: center; }
-    :nth-child(n+9 of li.top-site-outer) { display:none !important; }
+  .top-sites-list { display: flex; justify-content: center; }
+  :nth-child(n+9 of li.top-site-outer) { display:none !important; }
 }
 
 /* force enable light color sheme for webpages */

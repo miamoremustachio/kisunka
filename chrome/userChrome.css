@@ -3,152 +3,152 @@
 /* (https://github.com/OfficialFreak/firefox_chromelike) */
 
 .notificationbox-stack.global-notificationbox {
-    background: #3b394d;
+  background: #3b394d;
 }
 
 /* bookmarks bar padding */
 #PlacesToolbarItems {
-    padding-bottom: 2px;
+  padding-bottom: 2px;
 }
 
 /* rounded urlbar */
 .urlbar-input-container, #urlbar-background {
-    border-radius: 999vw !important;
+  border-radius: 999vw !important;
 }
 
 #urlbar-background {
-    background: #252436 !important;
+  background: #252436 !important;
 }
 
 div[breakout-extend=true] #urlbar-background {
-    border-radius: 5px !important;
-    margin-inline-end: 8px;
+  border-radius: 5px !important;
+  margin-inline-end: 8px;
 }
 
 #urlbar-input {
-    padding-inline-start: 8px !important;
+  padding-inline-start: 8px !important;
 }
 
 /* rounded urlbar buttons */
 #identity-box {
-    border-radius: 999vw 0 0 999vw;
-    overflow: hidden;
+  border-radius: 999vw 0 0 999vw;
+  overflow: hidden;
 }
 
 #identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > .identity-box-button, #urlbar-label-box {
-    background: #3B394D !important;
+  background: #3B394D !important;
 }
 
 #identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > .identity-box-button:hover, #urlbar-label-box:hover {
-    background: #4F4D5F !important;
+  background: #4F4D5F !important;
 }
 
 #urlbar:not([breakout-extend=true]) div[pageproxystate=invalid] #identity-box {
-    margin-inline-end: 10px !important;
+  margin-inline-end: 10px !important;
 }
 
 [breakout-extend=true] #identity-box {
-    border-radius: 5px !important;
+  border-radius: 5px !important;
 }
 
 #urlbar:not([breakout-extend=true]) #page-action-buttons {
-    border-radius: 0 999vw 999vw 0;
-    overflow: hidden;
+  border-radius: 0 999vw 999vw 0;
+  overflow: hidden;
 }
 
 [breakout-extend=true] #page-action-buttons {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 /* hide extension button from urlbar */
 #identity-box.extensionPage #identity-icon-box {
-    display: none;
+  display: none;
 }
 
 /* hide tracking protection button from urlbar */
 #tracking-protection-icon-container {
-    display: none;
+  display: none;
 }
 
 .tab-background {
-    border-radius: 7px !important;
+  border-radius: 7px !important;
 }
 
 .tab-background:is([selected], [multiselected]) {
-    background: #3b394d !important;
-    box-shadow: 0px #3b394d !important;
-    border-radius: 10px !important;
+  background: #3b394d !important;
+  box-shadow: 0px #3b394d !important;
+  border-radius: 10px !important;
 }
 
 .tab-background:is([selected], [multiselected])::before, .tab-background:is([selected], [multiselected])::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    bottom: 0;
-    box-shadow: 0 0 0 10px #3b394d;
-    background: #1e1e30;
-    overflow: clip;
-    clip-path: border-box;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: 0;
+  box-shadow: 0 0 0 10px #3b394d;
+  background: #1e1e30;
+  overflow: clip;
+  clip-path: border-box;
 }
 
 .tab-background:is([selected], [multiselected])::before {
-    left: -10px;
-    border-radius: 0px 0px 10px 0px;
+  left: -10px;
+  border-radius: 0px 0px 10px 0px;
 }
 
 .tab-background:is([selected], [multiselected])::after {
-    right: -10px;
-    border-radius: 0px 0px 0px 10px;
+  right: -10px;
+  border-radius: 0px 0px 0px 10px;
 }
 
 /* tab buttons color */
 toolbar #tabs-newtab-button:hover > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
-    background: #f2aab9 !important;
+  background: #f2aab9 !important;
 }
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected], [multiselected]) {
-    background: #f2aab9 !important;
+  background: #f2aab9 !important;
 }
 
 /* stylish findbar animation✨ */
 findbar[hidden=true] {
-    transform: translateY(-200%) !important;
+  transform: translateY(-200%) !important;
 }
 
 findbar {
-    position: absolute;
-    contain: unset !important;
-    top: 10px;
-    right: 10px;
-    background: #1C1B21 !important;
-    box-shadow: 3px 3px 24px #0b0b0b;
-    border: none !important;
-    border-radius: 10px;
-    transition: transform .1s ease-out !important;
+  position: absolute;
+  contain: unset !important;
+  top: 10px;
+  right: 10px;
+  background: #1C1B21 !important;
+  box-shadow: 3px 3px 24px #0b0b0b;
+  border: none !important;
+  border-radius: 10px;
+  transition: transform .1s ease-out !important;
 }
 
 findbar [anonid=find-case-sensitive], findbar [anonid=find-match-diacritics], findbar [anonid=find-entire-word] {
-    display: none;
+  display: none;
 }
 
 findbar .findbar-textbox {
-    background: none !important;
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 findbar .checkbox-label {
-    display: none;
+  display: none;
 }
 
 findbar .checkbox-check {
-    accent-color: rgb(91, 206, 250) !important;
+  accent-color: rgb(91, 206, 250) !important;
 }
 
 findbar description {
-    display: none !important;
+  display: none !important;
 }
 
 /* 🐈 Second Pawt */
