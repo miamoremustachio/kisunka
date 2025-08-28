@@ -9,7 +9,7 @@
 
 ## Installation
 
-- [Download](https://github.com/miamoremustachio/kisunka/archive/refs/heads/master.zip) the project source
+- Go to the [latest release](https://github.com/miamoremustachio/kisunka/releases/latest) and download the project source .zip
 - Put the `chrome` folder into your Firefox profile directory
   - go to `about:support` > **Profile directory** > **Open Folder**
 - go to `about:config`
@@ -17,6 +17,7 @@
   - `toolkit.legacyUserProfileCustomizations.stylesheets` > `true`
   - `widget.windows.mica` > `true`
   - `widget.windows.mica.toplevel-backdrop` > `2`
+- Turn on vertical tabs *(that's important!!)*
 - Restart Firefox and enjoy your neko vibes 🍵
 
 > :fish_cake: **Note:** Mica-related variables works only on Windows 11.
@@ -27,6 +28,7 @@
 - [Firefox Chrome-like](https://github.com/OfficialFreak/firefox_chromelike) by @OfficialFreak
 - [GWfox](https://github.com/akkva/gwfox) by @akkva
 - [shimmer](https://github.com/nuclearcodecat/shimmer) by @nuclearcodecat
+- [FirefoxCSS](https://www.reddit.com/r/FirefoxCSS/) *(of course~)*
 
 ***
 *🛠️ Tested on Firefox 142.0 & Win11 24H2 and expected to work best with these versions.*
