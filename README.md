@@ -26,6 +26,7 @@
 ## Sources
 - [Firefox Chrome-like](https://github.com/OfficialFreak/firefox_chromelike) by @OfficialFreak
 - [GWfox](https://github.com/akkva/gwfox) by @akkva
+- [shimmer](https://github.com/nuclearcodecat/shimmer) by @nuclearcodecat
 
 ***
 *🛠️ Tested on Firefox 142.0 & Win11 24H2 and expected to work best with these versions.*

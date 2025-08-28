@@ -25,10 +25,6 @@ div[breakout-extend=true] #urlbar-background {
   margin-inline-end: 8px;
 }
 
-#urlbar-input {
-  padding-inline-start: 8px !important;
-}
-
 /* rounded urlbar buttons */
 #identity-box {
   border-radius: 999vw 0 0 999vw;
@@ -221,4 +217,90 @@ findbar description {
     animation-name: urlbar-zoom-reset-pulse;
     animation-duration: 250ms;
   }
+}
+
+/* 🐈 Third Pawt */
+/* Source: shimmer */
+/* (https://github.com/nuclearcodecat/shimmer) */
+
+/* slim scrollbars everywhear!!!! */
+* {
+	scrollbar-width: thin !important;
+}
+
+/* blurred urlbar */
+:root[chromehidden*="menubar toolbar directories extrachrome"] #urlbar-background { 
+	background: rgba(0, 0, 0, 0) !important;
+	border: 0 !important;
+}
+
+:root:not([chromehidden*="menubar toolbar directories extrachrome"]) #urlbar-background { 
+	background: var(--toolbar-field-background-color) !important;
+	border: 1px solid var(--toolbar-field-border-color) !important;
+}
+
+/* make the background of extended urlbar move down */
+#urlbar[breakout-extend] {
+  position: fixed !important;
+  margin-top: 12vh !important;
+  background: rgba(0, 0, 0, 0) !important;
+}  
+
+/* do some other shit with urlbar */
+#urlbar[breakout-extend] {
+  transition: margin-top 0.45s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+}
+
+#urlbar {
+  transition: margin-top 0.45s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+}
+
+#urlbar[breakout-extend] {
+	z-index: 9999 !important;
+	left: 10% !important;
+	width: calc(100vw - 20%) !important;
+}
+
+#urlbar[breakout-extend] #urlbar-background {
+  transition: all 0.1s linear !important;
+}
+
+#urlbar[breakout-extend] #urlbar-background {
+  transition: none !important;
+}
+
+#urlbar[breakout-extend] #urlbar-background {
+	background: var(--toolbar-field-focus-background-color) !important;
+}
+
+/* needed for popup transition to work */
+#urlbar {
+	margin-top: 0 !important;
+}
+
+/* urlbox backdrop */
+#urlbar[breakout-extend]::before{
+	content: '' !important;
+	width: 200vw !important;
+	height: 200vh !important;
+	position: fixed !important;
+	pointer-events: none !important;
+	overflow: hidden !important;
+	top: -30vh !important;
+	left: -30vw !important;
+	background: color-mix(in srgb, var(--toolbar-field-focus-background-color) 35%, rgba(0, 0, 0, 0.2)) !important;
+}
+
+/* centered text when urlbar not in use */
+#urlbar:not(:is([breakout-extend])) #urlbar-input {
+	text-align: center !important;
+}
+
+/* bigger rounding for navbar buttons */
+#nav-bar {
+	toolbarbutton {
+		& > stack, & > image {
+			border-radius: 10px !important;
+		}
+	}
 }
