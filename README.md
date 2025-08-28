@@ -15,11 +15,13 @@
 - go to `about:config`
 - Set these variables:
   - `toolkit.legacyUserProfileCustomizations.stylesheets` > `true`
-  - `svg.context-properties.content.enabled` > `true`
   - `widget.windows.mica` > `true`
-  - `sidebar.animation.enabled` > `false`
   - `widget.windows.mica.toplevel-backdrop` > `2`
 - Restart Firefox and enjoy your neko vibes 🍵
+
+> :fish_cake: **Note:** Mica-related variables works only on Windows 11.
+>
+> If you don't see any effect after setting them up as described above, try switching to the **System theme — auto** in `about:addons`
 
 ## Sources
 - [Firefox Chrome-like](https://github.com/OfficialFreak/firefox_chromelike) by @OfficialFreak
