@@ -398,3 +398,11 @@ findbar description {
 #downloads-button > .toolbarbutton-badge-stack > #downloads-indicator-progress-outer {
   border-color: var(--downloads-progress-border-color) !important;
 }
+
+/* 🐈‍⬛ Bonus Pawt */
+/* ~Tabliss~ */
+
+/* a hacky solution to replace the tabliss favicon */
+tab[label="New Tab"] .tab-icon-stack img {
+  content: url('https://miamoremustachio.github.io/logo/favicon.png');
+}

@@ -1,9 +1,8 @@
-/* Tabliss Custom CSS */
 /* Intended Use-case: 
-    Message
+    Message (x2)
     Search box
     Quick Links
-    Custom CSS with the file content 
+    Custom CSS with this file content
 */
 
 .Overlay {
@@ -12,6 +11,11 @@
 
 .Overlay:hover {
     opacity: 1;
+}
+
+.topCentre {
+    margin-top: 2rem;
+    left: 49% !important;
 }
 
 .middleCentre {
@@ -83,9 +87,9 @@
 }
 
 .Links > a > i {
-    background: #444;
-    width: 3.2rem;
-    height: 3.2rem;
+    background: #22222222;
+    width: 3.7rem;
+    height: 3.7rem;
     border-radius: 999vw;
     display: flex;
     justify-content: center;
