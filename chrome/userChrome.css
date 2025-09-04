@@ -17,7 +17,8 @@
 }
 
 #urlbar-background {
-  background: #252436 !important;
+	transition: all 0.1s linear !important;
+  outline-color: rgba(91, 206, 250, 0.8) !important;
 }
 
 div[breakout-extend=true] #urlbar-background {
@@ -100,11 +101,11 @@ div[breakout-extend=true] #urlbar-background {
 
 /* tab buttons color */
 toolbar #tabs-newtab-button:hover > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
-  background: #f2aab9 !important;
+  background: rgb(242, 170, 185) !important;
 }
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected], [multiselected]) {
-  background: #f2aab9 !important;
+  background: rgb(242, 170, 185) !important;
 }
 
 /* stylish findbar animation✨ */
@@ -346,4 +347,54 @@ findbar description {
       transform-origin: center !important;
     }
   }
+}
+
+/* 🐈 Fourth Pawt */
+/* My own ruleees! >:3 */
+
+/* remove spacers */
+.titlebar-spacer {
+  display: none;
+}
+
+/* do some fancy shit */
+#browser {
+  clip-path: circle(100%);
+  background-color: transparent !important;
+}
+
+/* transparent pop up menu */
+.toolbar-menupopup {
+  appearance: auto !important;
+  --panel-background: transparent !important;
+  --panel-shadow-margin: 0 !important;
+}
+
+/* hide extension icon from the address bar */
+#identity-box.extensionPage #identity-icon-label {
+	display: none !important;
+}
+
+/* make downloads icon prettier (UwU) */
+#downloads-button[progress] {
+  --downloads-progress-border-color: rgb(242, 170, 185) !important;
+  --downloads-progress-fill: rgb(242, 170, 185) !important;
+}
+#downloads-button[attention="success"] {
+  --downloads-progress-border-color: rgb(185, 242, 170) !important;
+  --downloads-progress-fill: rgb(185, 242, 170) !important;
+}
+#downloads-button[attention="warning"] {
+  --downloads-progress-border-color: rgb(242, 228, 171) !important;
+  --downloads-progress-fill: rgb(242, 228, 171) !important;
+}
+#downloads-button[attention="severe"] {
+  --downloads-progress-border-color: red !important;
+  --downloads-progress-fill: red !important;
+}
+#downloads-button {
+  --toolbarbutton-icon-fill-attention: var(--downloads-progress-fill) !important;
+}
+#downloads-button > .toolbarbutton-badge-stack > #downloads-indicator-progress-outer {
+  border-color: var(--downloads-progress-border-color) !important;
 }
