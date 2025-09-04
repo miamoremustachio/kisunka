@@ -25,23 +25,22 @@
 > If you don't see any effect after setting them up as described above, try switching to the **System theme — auto** in `about:addons`
 
 ***
-For the sassiest transbian-gradient home page:
+### For the sassiest transbian-gradient home page:
 
 - Download [Tabliss](https://addons.mozilla.org/en-US/firefox/addon/tabliss/)
 - :gear: > scroll to the bottom > **Import**
 - Select `tabliss.json` from the project root
 
-*There's a chance though that your kitty will be soaring on their fart-powered missile: it's up to you to set the silly back on their place using tabliss' Display Settings or let 'em fly :rocket:*
+*There's a chance though that your kitty will be soaring on their fart-powered missile: it's up to you to set the silly back on their place using Tabliss Display Settings or let 'em fly :rocket:*
 
 ***
-I also highly recommend to use [DWMBlurGlass](https://github.com/Maplespe/DWMBlurGlass) with this theme for maximum background blurrrness :sparkles:
+### I also highly recommend to use [DWMBlurGlass](https://github.com/Maplespe/DWMBlurGlass) with this theme for maximum background blurrrness :sparkles:
 
 To set it up:
-- Dowload .zip from the GitHub [release page](https://github.com/Maplespe/DWMBlurGlass/releases)
+- Dowload .zip from the [release page](https://github.com/Maplespe/DWMBlurGlass/releases)
 - Unzip it anywhere on `C:/` drive
-<details><summary><b>- Run the `DWMBlurGlass.exe` and click Install</b></summary>
-If nothing happens when you click Install, then you need to click on the Symbols page and click Download
-<details>
+- Run the `DWMBlurGlass.exe` and click Install
+  - If nothing happens when you click Install, then you need to click on the Symbols page and click Download
 - Youre golden :nail_care:
 
 ## Sources
