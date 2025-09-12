@@ -50,6 +50,7 @@ To set it up:
       <h3 align=center> &bull; <a href="https://github.com/OfficialFreak/firefox_chromelike">Firefox Chrome-like</a> by @OfficialFreak </h3>
       <h3 align=center> &bull; <a href="https://github.com/akkva/gwfox">GWfox</a> by @akkva </h3>
       <h3 align=center> &bull; <a href="https://github.com/nuclearcodecat/shimmer">shimmer</a> by @nuclearcodecat </h3>
+      <h3 align=center> &bull; <a href="https://github.com/datguypiko/Firefox-Mod-Blur">Firefox Mod Blur</a> by @datguypiko </h3>
     </td>
     <td> <img src="https://github.com/user-attachments/assets/0aff286d-0caf-429c-8d46-ca3b83245285"/> </td>
   </tr>
