@@ -1,5 +1,5 @@
 # <p align="center"> <b> :bubbles: Kisunka! :bubbles: </b> </p>
-### <p align="center"> Make your browser purrrr~ </p>
+### <p align="center"> <i> Make your browser purrrr~ </i> </p>
 
 <p align="center">
   <img src="/preview.png" alt="mreow~" />
@@ -41,15 +41,16 @@ To set it up:
   - If nothing happens when you click Install, then you need to click on the Symbols page and click Download
 - Youre golden :nail_care:
 
-## Sources
+***
 <table align=center>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/0aff286d-0caf-429c-8d46-ca3b83245285"/></td>
+    <td> <img src="https://github.com/user-attachments/assets/0aff286d-0caf-429c-8d46-ca3b83245285"/> </td>
     <td>
-      <p align=center><em>:small_orange_diamond: [Firefox Chrome-like](https://github.com/OfficialFreak/firefox_chromelike) by @OfficialFreak</em></p>
-      <p align=center><em>:small_orange_diamond: [GWfox](https://github.com/akkva/gwfox) by @akkva</em></p>
-      <p align=center><em>:small_orange_diamond: [shimmer](https://github.com/nuclearcodecat/shimmer) by @nuclearcodecat</em></p>
+      <h1 align=center> 🧁 Sources 🧁 </h1>
+      <h3 align=center> &bull; <a href="https://github.com/OfficialFreak/firefox_chromelike">Firefox Chrome-like</a> by @OfficialFreak </h3>
+      <h3 align=center> &bull; <a href="https://github.com/akkva/gwfox">GWfox</a> by @akkva </h3>
+      <h3 align=center> &bull; <a href="https://github.com/nuclearcodecat/shimmer">shimmer</a> by @nuclearcodecat </h3>
     </td>
-    <td><img src="https://github.com/user-attachments/assets/0aff286d-0caf-429c-8d46-ca3b83245285"/></td>
+    <td> <img src="https://github.com/user-attachments/assets/0aff286d-0caf-429c-8d46-ca3b83245285"/> </td>
   </tr>
 </table>
