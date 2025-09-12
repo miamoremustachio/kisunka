@@ -2,10 +2,8 @@
 ### <p align="center"> Make your browser purrrr~ </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0aff286d-0caf-429c-8d46-ca3b83245285" alt="the cutest creature evr" />
+  <img src="/preview.png" alt="mreow~" />
 </p>
-
-<p align="center"> <i> I haven't made a preview yet, so here's a fox for u </i> </p>
 
 ## Installation
 
@@ -44,10 +42,14 @@ To set it up:
 - Youre golden :nail_care:
 
 ## Sources
-- [Firefox Chrome-like](https://github.com/OfficialFreak/firefox_chromelike) by @OfficialFreak
-- [GWfox](https://github.com/akkva/gwfox) by @akkva
-- [shimmer](https://github.com/nuclearcodecat/shimmer) by @nuclearcodecat
-- [FirefoxCSS](https://www.reddit.com/r/FirefoxCSS/) *(of course~)*
-
-***
-*🛠️ Tested on Firefox 142.0 & Win11 24H2 and expected to work best with that setup*
+<table align=center>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/0aff286d-0caf-429c-8d46-ca3b83245285"/></td>
+    <td>
+      <p align=center><em>:small_orange_diamond: [Firefox Chrome-like](https://github.com/OfficialFreak/firefox_chromelike) by @OfficialFreak</em></p>
+      <p align=center><em>:small_orange_diamond: [GWfox](https://github.com/akkva/gwfox) by @akkva</em></p>
+      <p align=center><em>:small_orange_diamond: [shimmer](https://github.com/nuclearcodecat/shimmer) by @nuclearcodecat</em></p>
+    </td>
+    <td><img src="https://github.com/user-attachments/assets/0aff286d-0caf-429c-8d46-ca3b83245285"/></td>
+  </tr>
+</table>
