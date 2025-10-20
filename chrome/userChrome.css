@@ -12,16 +12,16 @@
 }
 
 /* rounded urlbar */
-.urlbar-input-container, #urlbar-background {
+.urlbar-input-container, .urlbar-background {
   border-radius: 999vw !important;
 }
 
-#urlbar-background {
+.urlbar-background {
 	transition: all 0.1s linear !important;
   outline-color: rgba(91, 206, 250, 0.8) !important;
 }
 
-div[breakout-extend=true] #urlbar-background {
+div[breakout-extend=true] .urlbar-background {
   border-radius: 5px !important;
   margin-inline-end: 8px;
 }
@@ -230,12 +230,12 @@ findbar description {
 }
 
 /* blurred urlbar */
-:root[chromehidden*="menubar toolbar directories extrachrome"] #urlbar-background { 
+:root[chromehidden*="menubar toolbar directories extrachrome"] .urlbar-background { 
 	background: rgba(0, 0, 0, 0) !important;
 	border: 0 !important;
 }
 
-:root:not([chromehidden*="menubar toolbar directories extrachrome"]) #urlbar-background { 
+:root:not([chromehidden*="menubar toolbar directories extrachrome"]) .urlbar-background { 
 	background: var(--toolbar-field-background-color) !important;
 	border: 1px solid var(--toolbar-field-border-color) !important;
 }
@@ -262,15 +262,15 @@ findbar description {
 	width: calc(100vw - 20%) !important;
 }
 
-#urlbar[breakout-extend] #urlbar-background {
+#urlbar[breakout-extend] .urlbar-background {
   transition: all 0.1s linear !important;
 }
 
-#urlbar[breakout-extend] #urlbar-background {
+#urlbar[breakout-extend] .urlbar-background {
   transition: none !important;
 }
 
-#urlbar[breakout-extend] #urlbar-background {
+#urlbar[breakout-extend] .urlbar-background {
 	background: var(--toolbar-field-focus-background-color) !important;
 }
 
