@@ -2,7 +2,7 @@
 ### <p align="center"> <i> Make your browser purrrr~ </i> </p>
 
 <p align="center">
-  <img src="/preview.png" alt="mreow~" />
+  <img src="/github/preview.png" alt="mreow~" />
 </p>
 
 ## Installation
@@ -27,7 +27,7 @@
 
 - Download [Tabliss](https://addons.mozilla.org/en-US/firefox/addon/tabliss/)
 - :gear: > scroll to the bottom > **Import**
-- Select `tabliss.json` from the project root
+- Select `tabliss.json` (you can find it in `tabliss` folder)
 
 *There's a chance though that your kitty will be soaring on their fart-powered missile: it's up to you to set the silly back on their place using Tabliss Display Settings or let 'em fly :rocket:*
 
