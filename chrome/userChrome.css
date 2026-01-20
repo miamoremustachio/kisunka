@@ -230,17 +230,32 @@ findbar description {
 }
 
 /* blurred urlbar */
-:root[chromehidden*="menubar toolbar directories extrachrome"] .urlbar-background { 
+:root[chromehidden*="menubar toolbar directories extrachrome"] .urlbar-background {
 	background: rgba(0, 0, 0, 0) !important;
 	border: 0 !important;
 }
 
-:root:not([chromehidden*="menubar toolbar directories extrachrome"]) .urlbar-background { 
+:root:not([chromehidden*="menubar toolbar directories extrachrome"]) .urlbar-background {
 	background: var(--toolbar-field-background-color) !important;
 	border: 1px solid var(--toolbar-field-border-color) !important;
 }
 
-/* make the background of extended urlbar move down */
+.urlbar-background {
+	border-radius: 16px !important;
+	transition: all 0.1s linear !important;
+}
+
+/* rounded buttons inside urlbar */
+#identity-box > box, #tracking-protection-icon-container, #page-action-buttons > *, #urlbar-revert-button-container, #urlbar-searchmode-switcher {
+	border-radius: 16px !important;
+}
+
+/* needed for popup transition to work */
+#urlbar {
+	margin-top: 0 !important;
+}
+
+/* make the background of extended urlbar move down and BROKEN drop a blur behind */
 #urlbar[breakout-extend] {
   position: fixed !important;
   margin-top: 12vh !important;
@@ -264,19 +279,7 @@ findbar description {
 
 #urlbar[breakout-extend] .urlbar-background {
   transition: all 0.1s linear !important;
-}
-
-#urlbar[breakout-extend] .urlbar-background {
-  transition: none !important;
-}
-
-#urlbar[breakout-extend] .urlbar-background {
-	background: var(--toolbar-field-focus-background-color) !important;
-}
-
-/* needed for popup transition to work */
-#urlbar {
-	margin-top: 0 !important;
+  background: var(--toolbar-field-focus-background-color) !important;
 }
 
 /* urlbox backdrop */
@@ -292,9 +295,52 @@ findbar description {
 	background: color-mix(in srgb, var(--toolbar-field-focus-background-color) 35%, rgba(0, 0, 0, 0.2)) !important;
 }
 
+/*? urlbar bigger text */
+#urlbar[breakout-extend] #urlbar-input {
+	font-size: 1.5rem !important;
+}
+
+/*? taller urlbar for bigger text when extended */
+#urlbar[breakout-extend] .urlbar-input-container {
+	height: 48px !important;
+}
+
+@media (max-width: 600px) {
+	#urlbar[breakout-extend] #urlbar-input {
+		font-size: 1.25rem !important;
+	}
+}
+
 /* centered text when urlbar not in use */
 #urlbar:not(:is([breakout-extend])) #urlbar-input {
 	text-align: center !important;
+}
+
+/* hide search one offs */
+.search-one-offs {
+  display: none !important;
+}
+
+/* fix for floating urlbar */
+#urlbar:not([breakout-extend]) {
+  top: auto !important;
+}
+
+/* hide 1px line below urlbar */
+.urlbarView-body-inner {
+	border-top: none !important;
+}
+
+/* hide border below top bar */
+#navigator-toolbox {
+	border: 0px !important;
+}
+
+/* if popup window, make urlbar smaller and centered */
+#main-window[chromehidden*="toolbar"] #urlbar-container {
+	max-width: 90% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 /* bigger rounding for navbar buttons */
