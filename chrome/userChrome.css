@@ -3,7 +3,7 @@
 /* (https://github.com/OfficialFreak/firefox_chromelike) */
 
 .notificationbox-stack.global-notificationbox {
-  background: #3b394d;
+  background: #3F3F40;
 }
 
 /* bookmarks bar padding */
@@ -12,58 +12,59 @@
 }
 
 /* rounded urlbar */
-.urlbar-input-container, .urlbar-background {
-  border-radius: 999vw !important;
+.urlbar-input-container,
+.urlbar-background {
+  border-radius: 16px !important;
 }
 
 .urlbar-background {
-	transition: all 0.1s linear !important;
+  transition: all 0.1s linear !important;
   outline-color: rgba(91, 206, 250, 0.8) !important;
 }
 
-div[breakout-extend=true] .urlbar-background {
+div[breakout-extend="true"] .urlbar-background {
   border-radius: 5px !important;
   margin-inline-end: 8px;
 }
 
 /* rounded urlbar buttons */
-#identity-box {
-  border-radius: 999vw 0 0 999vw;
-  overflow: hidden;
+#identity-box[pageproxystate="valid"]:is(
+  .notSecureText,
+  .chromeUI,
+  )
+  > .identity-box-button,
+#urlbar-label-box {
+  background: #3F3F40 !important;
 }
 
-#identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > .identity-box-button, #urlbar-label-box {
-  background: #3B394D !important;
+#identity-box[pageproxystate="valid"]:is(
+  .notSecureText,
+  .chromeUI,
+  )
+  > .identity-box-button:hover,
+#urlbar-label-box:hover {
+  background: #3F3F40 !important;
 }
 
-#identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > .identity-box-button:hover, #urlbar-label-box:hover {
-  background: #4F4D5F !important;
-}
-
-#urlbar:not([breakout-extend=true]) div[pageproxystate=invalid] #identity-box {
+#urlbar:not([breakout-extend="true"]) div[pageproxystate="invalid"] #identity-box {
   margin-inline-end: 10px !important;
 }
 
-[breakout-extend=true] #identity-box {
+[breakout-extend="true"] #identity-box {
   border-radius: 5px !important;
 }
 
-#urlbar:not([breakout-extend=true]) #page-action-buttons {
+#urlbar:not([breakout-extend="true"]) #page-action-buttons, #urlbar-revert-button-container {
   border-radius: 0 999vw 999vw 0;
   overflow: hidden;
 }
 
-[breakout-extend=true] #page-action-buttons {
-  margin-right: 8px;
+[breakout-extend="true"] #urlbar-revert-button-container {
+  border-radius: 5px !important;
 }
 
 /* hide extension button from urlbar */
 #identity-box.extensionPage #identity-icon-box {
-  display: none;
-}
-
-/* hide tracking protection button from urlbar */
-#tracking-protection-icon-container {
   display: none;
 }
 
@@ -72,12 +73,13 @@ div[breakout-extend=true] .urlbar-background {
 }
 
 .tab-background:is([selected], [multiselected]) {
-  background: #3b394d !important;
-  box-shadow: 0px #3b394d !important;
+  background: #3F3F40 !important;
+  box-shadow: 0px #3F3F40 !important;
   border-radius: 10px !important;
 }
 
-.tab-background:is([selected], [multiselected])::before, .tab-background:is([selected], [multiselected])::after {
+.tab-background:is([selected], [multiselected])::before,
+.tab-background:is([selected], [multiselected])::after {
   content: "";
   position: absolute;
   width: 10px;
@@ -125,7 +127,9 @@ findbar {
   transition: transform .1s ease-out !important;
 }
 
-findbar [anonid=find-case-sensitive], findbar [anonid=find-match-diacritics], findbar [anonid=find-entire-word] {
+findbar [anonid=find-case-sensitive],
+findbar [anonid=find-match-diacritics],
+findbar [anonid=find-entire-word] {
   display: none;
 }
 
@@ -185,17 +189,23 @@ findbar description {
     transition: .25s !important;
     background-color: transparent !important;
   }
-  
+
   .devtools-toolbox-side-iframe {
     border-radius: var(--br2);
     margin-top: 8px !important;
     margin-bottom: 8px !important;
     box-shadow: 0 1.5px 9px light-dark(#00000026, #00000040);
     -moz-window-dragging: no-drag;
-    &:first-child { margin-left: 8px !important; }
-    &:last-child { margin-right: 8px !important; }
+
+    &:first-child {
+      margin-left: 8px !important;
+    }
+
+    &:last-child {
+      margin-right: 8px !important;
+    }
   }
-  
+
   .devtools-toolbox-bottom-iframe {
     border-radius: var(--br2);
     margin: 0 8px 8px 8px !important;
@@ -215,9 +225,11 @@ findbar description {
 
   #sidebar-box {
     margin-bottom: 2px !important;
+
     &:not([sidebar-positionend]) {
       &[sidebar-panel-open] {
         margin-inline-end: 2px !important;
+
         @media (-moz-platform: windows) {
           margin-inline-end: 1px !important;
         }
@@ -238,16 +250,18 @@ findbar description {
   -moz-window-dragging: drag;
 }
 
-#sidebar-box, .tools-and-extensions {
+#sidebar-box,
+.tools-and-extensions {
   -moz-window-dragging: no-drag;
 }
 
 /* cool bookmarks-adding animation */
-#star-button[starred], #translations-button-circle-arrows,
+#star-button[starred],
+#translations-button-circle-arrows,
 #reader-mode-button[readeractive] > .urlbar-icon,
 #translations-button[translationsactive] > #translations-button-icon,
 #shopping-sidebar-button[shoppingsidebaropen] > .urlbar-icon {
-  fill: #f5a9b8 !important;
+  fill: #edd308 !important;
 }
 
 :has(#star-button-box[open]) {
@@ -277,14 +291,21 @@ findbar description {
 	border: 1px solid var(--toolbar-field-border-color) !important;
 }
 
-.urlbar-background {
-	border-radius: 16px !important;
-	transition: all 0.1s linear !important;
+/* rounded search mode switcher */
+.searchmode-switcher {
+  --button-background-color: none !important;
+  border-radius: 16px 5px 5px 16px !important;
+  overflow: hidden !important;
 }
 
-/* rounded buttons inside urlbar */
-#identity-box > box, #tracking-protection-icon-container, #page-action-buttons > *, #urlbar-revert-button-container, #urlbar-searchmode-switcher {
-	border-radius: 16px !important;
+.searchmode-switcher:hover {
+  background: #3F3F40 !important;
+}
+
+/* rounded enhanced tracking protection button */
+#trust-icon-container {
+  border-radius: 16px 5px 5px 16px !important;
+  overflow: hidden !important;
 }
 
 /* needed for popup transition to work */
@@ -292,12 +313,12 @@ findbar description {
 	margin-top: 0 !important;
 }
 
-/* make the background of extended urlbar move down and BROKEN drop a blur behind */
+/* make the urlbar move down when typing */
 #urlbar[breakout-extend] {
   position: fixed !important;
   margin-top: 12vh !important;
   background: rgba(0, 0, 0, 0) !important;
-}  
+}
 
 /* do some other shit with urlbar */
 #urlbar[breakout-extend] {
@@ -320,7 +341,7 @@ findbar description {
 }
 
 /* urlbox backdrop */
-#urlbar[breakout-extend]::before{
+#urlbar[breakout-extend]::before {
 	content: '' !important;
 	width: 200vw !important;
 	height: 200vh !important;
@@ -454,14 +475,11 @@ findbar description {
   padding: 4px !important;
 }
 
-#unified-extensions-view:is(panelview, #widget-overflow-fixed-list)
-  .toolbaritem-combined-buttons {
+#unified-extensions-view:is(panelview, #widget-overflow-fixed-list) .toolbaritem-combined-buttons {
   margin: 2px !important;
 }
 
-#unified-extensions-view
-  .unified-extensions-item
-  .unified-extensions-item-action-button {
+#unified-extensions-view .unified-extensions-item .unified-extensions-item-action-button {
   padding: 6px !important;
 }
 
@@ -550,16 +568,9 @@ findbar description {
   background-color: transparent !important;
 }
 
-/* transparent pop up menu */
-.toolbar-menupopup {
-  appearance: auto !important;
-  --panel-background: transparent !important;
-  --panel-shadow-margin: 0 !important;
-}
-
 /* hide extension icon from the address bar */
 #identity-box.extensionPage #identity-icon-label {
-	display: none !important;
+  display: none !important;
 }
 
 /* make downloads icon prettier (UwU) */
@@ -567,21 +578,26 @@ findbar description {
   --downloads-progress-border-color: rgb(242, 170, 185) !important;
   --downloads-progress-fill: rgb(242, 170, 185) !important;
 }
+
 #downloads-button[attention="success"] {
   --downloads-progress-border-color: rgb(185, 242, 170) !important;
   --downloads-progress-fill: rgb(185, 242, 170) !important;
 }
+
 #downloads-button[attention="warning"] {
   --downloads-progress-border-color: rgb(242, 228, 171) !important;
   --downloads-progress-fill: rgb(242, 228, 171) !important;
 }
+
 #downloads-button[attention="severe"] {
   --downloads-progress-border-color: red !important;
   --downloads-progress-fill: red !important;
 }
+
 #downloads-button {
   --toolbarbutton-icon-fill-attention: var(--downloads-progress-fill) !important;
 }
+
 #downloads-button > .toolbarbutton-badge-stack > #downloads-indicator-progress-outer {
   border-color: var(--downloads-progress-border-color) !important;
 }
